@@ -10,9 +10,9 @@ In this work authors propose a detector using a two-stage hypothesize and classi
 
 Authors have collected a comprehensive dataset of hand images from various public image [sources](http://www.robots.ox.ac.uk/~vgg/data/hands/). In each image, all the hands that can be perceived clearly by humans are annotated. The annotations consist of a bounding rectangle, which does not have to be axis aligned, oriented with respect to the wrist.
 
-|               | Training Set | Validation Set | Test Set |
+|               | train Set | val Set | test Set |
 |---------------|------------|--------------|---------|
-| # Hand Instances          | 9163       | 1856         | 2031    |
-| # Bigger Hand Instances   | 2861       | 649          | 660     |
+| Hand Instances          | 9163       | 1856         | 2031    |
+| Bigger Hand Instances   | 2861       | 649          | 660     |
 
 <span style="font-size: smaller; font-style: italic;">Statistics of hand dataset. A hand instance is ‘big’ if area of the bounding box is greater than 1500 sq. pixels. Bigger hand instances are used for experimental evaluations.</span>
