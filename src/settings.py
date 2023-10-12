@@ -20,7 +20,7 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = License.Unknown()
+LICENSE: License = License.Custom(url="https://www.robots.ox.ac.uk/~vgg/terms/dataset-group-2-access.html", redistributable=False)
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Entertainment()]
 CATEGORY: Category = Category.Entertainment()
 
