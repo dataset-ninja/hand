@@ -10,7 +10,6 @@ In this work authors propose a detector using a two-stage hypothesize and classi
 
 Authors have collected a comprehensive dataset of hand images from various public image [sources](http://www.robots.ox.ac.uk/~vgg/data/hands/). In each image, all the hands that can be perceived clearly by humans are annotated. The annotations consist of a bounding rectangle, which does not have to be axis aligned, oriented with respect to the wrist.
 
-<!DOCTYPE html>
 <html>
 <head>
     <style>
