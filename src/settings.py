@@ -43,7 +43,7 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/hand"
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "https://www.kaggle.com/datasets/armannikkhah/hand-dataset"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -57,12 +57,13 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"Kaggle":"https:/
 
 CITATION_URL: Optional[str] = "https://www.semanticscholar.org/paper/Hand-detection-using-multiple-proposals-Mittal-Zisserman/12c6f3ae8f20a1473a89b9cbb82d0f02275ea62b"
 AUTHORS: Optional[List[str]] = ["Arpit Mittal", "Andrew Zisserman", "Philip H. S. Torr"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["vgg-webmasters@robots.ox.ac.uk"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["University of Oxford", "Oxford Brookes University, UK"]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.ox.ac.uk/", "https://www.brookes.ac.uk/"]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__POSTTEXT__":"Also, the dataset includes ***right*** and ***left*** object tags. Explore them in supervisely advanced labeling tool"}
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {"__POSTTEXT__":"Also, the objects have ***right*** and ***left*** tags. Explore them in the supervisely labeling tool"}
 TAGS: Optional[List[str]] = None
 
 
@@ -110,6 +111,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
