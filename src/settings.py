@@ -51,7 +51,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = ["https://www.semanticscholar.org/paper/Hand-detection-using-multiple-proposals-Mittal-Zisserman/12c6f3ae8f20a1473a89b9cbb82d0f02275ea62b"]
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = ["https://www.robots.ox.ac.uk/~vgg/publications/2011/Mittal11/mittal11.pdf"]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
 REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"Kaggle":"https://www.kaggle.com/datasets/armannikkhah/hand-dataset"}
 
